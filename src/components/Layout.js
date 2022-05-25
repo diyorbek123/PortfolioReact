@@ -17,7 +17,7 @@ const Layout = ({children}) => {
     if(menu.style.display!=="flex"){
       menu.style.display="flex"
     }else{
-      menu.style.display="none"
+      menu.style.display="none";
     }
   };
 
@@ -63,7 +63,7 @@ const Layout = ({children}) => {
       </div>
       <div className="navbar-right">
         <ul className="d-flex align-items-center">
-          <li><Link className="navbar-link active" onClick={(e)=>active(e)} to="/">{lan.Home} <span/><span/></Link></li>
+          <li><Link className="navbar-link" onClick={(e)=>active(e)} to="/">{lan.Home} <span/><span/></Link></li>
           <li><Link className="navbar-link" onClick={(e)=>active(e)} to="resume">{lan.Resume} <span/><span/></Link></li>
           <li><Link className="navbar-link" onClick={(e)=>active(e)} to="portfolio">{lan.Portfolio}<span/><span/></Link></li>
           <li><Link className="navbar-link" onClick={(e)=>active(e)} to="contact">{lan.Contact} <span/><span/></Link></li>
@@ -77,6 +77,11 @@ const Layout = ({children}) => {
         </ul>
       </div>
       <div className="navbar-menu"><img src="menu.png" onClick={showDrawer}/></div>
+      {/* <div className="navbar-menu-btn" onClick={showDrawer}>
+        <div className="btn-nav"></div>
+        <div className="btn-nav mt-3"></div>
+        <div className="btn-nav mt-3"></div>
+      </div> */}
      </div>
     </div>
    <div className="padding">
@@ -87,7 +92,7 @@ const Layout = ({children}) => {
           options={{
             background: {
               color: {
-                value: '#000',
+                value: '#212428',
               },
             },
             fpsLimit: 120,
@@ -122,7 +127,7 @@ const Layout = ({children}) => {
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
-                width: 1,
+                width: 2,
               },
               collisions: {
                 enable: true,
@@ -151,7 +156,7 @@ const Layout = ({children}) => {
                 type: "circle",
               },
               size: {
-                value: { min: 1, max: 2 },
+                value: { min: 1, max: 3 },
               },
             },
             detectRetina: true,

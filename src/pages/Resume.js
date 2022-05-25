@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Progress } from 'antd';
 import { MotionAnimate } from 'react-motion-animate';
 import { Link, Outlet } from 'react-router-dom';
@@ -7,6 +7,9 @@ import { useSelector } from 'react-redux';
 
 const Resume = (props) => {
     const lan = useSelector((state) => state.languageReducer)
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
     return (
         <>
             <div id="edications" className="education-area section-education section-gap mt-5">

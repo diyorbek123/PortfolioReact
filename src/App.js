@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Education from './pages/Education';
@@ -11,6 +11,9 @@ import Contact from './pages/Contact';
 
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  }, [])
   return (
     <div className="Container">
       <BrowserRouter>
@@ -22,9 +25,9 @@ function App() {
               <Route path="portfolio" element={<Portfolio />} />
               <Route path="contact" element={<Contact />} />
               <Route path="resume" element={<Resume />} >
-              <Route index element={<EducationResume />} />
+                <Route index element={<EducationResume />} />
                 <Route path="educationresume" element={<EducationResume />} />
-                <Route path="skills" element={<Skills/>}/>
+                <Route path="skills" element={<Skills />} />
               </Route>
             </Route>
           </Routes>

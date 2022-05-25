@@ -21,8 +21,8 @@ const PortfolioCardJavascript = () => {
                             <div className="pt-2"><SiJavascript size={40} /></div>
                         </div>
                         <div className=" mt-5 portfolio-span-bottom">
-                            <div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><FaGithubSquare size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Github</h4></div>
-                            <div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><SiNetlify size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Demo</h4></div>
+                            <a href={item.hrefGithub} target="_blank"><div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><FaGithubSquare size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Github</h4></div></a>
+                            <a href={item.href} target="_blank"><div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><SiNetlify size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Demo</h4></div></a>
                         </div>
                     </div>
                 </Card>

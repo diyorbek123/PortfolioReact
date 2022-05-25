@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gray  !important;
 }
 
 :root {
@@ -119,7 +120,7 @@ html {
   list-style: none;
   text-transform: uppercase;
   margin-right: 5.2rem;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   font-size: 1.6rem;
 }
 
@@ -131,12 +132,12 @@ html {
   font-weight: normal;
 }
 
-.navbar-right ul li .active {
-  color: red !important;
+/* .navbar-right ul li .active {
+  color: yellow !important;
   font-weight: normal;
-}
+} */
 
-.navbar-right ul li a span:nth-child(1) {
+/* .navbar-right ul li a span:nth-child(1) {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -144,9 +145,9 @@ html {
   height: 2px;
   background-color: transparent;
   transition: 0.8s ease;
-}
+} */
 
-.navbar-right ul li a span:nth-child(2) {
+/* .navbar-right ul li a span:nth-child(2) {
   position: absolute;
   top: 0;
   right: 0;
@@ -154,9 +155,9 @@ html {
   height: 2px;
   background-color: transparent;
   transition: 0.8s ease;
-}
+} */
 
-.navbar-right ul li .active span:nth-child(1) {
+/* .navbar-right ul li .active span:nth-child(1) {
   background-color: white;
   width: 100%;
 }
@@ -164,7 +165,7 @@ html {
 .navbar-right ul li .active span:nth-child(2) {
   background-color: white;
   width: 100%;
-}
+} */
 
 .navbar-responsive ul li a {
   text-decoration: none;
@@ -232,7 +233,7 @@ ol ul {
 }
 
 .about-info-top h1 span {
-  color: red;
+  color: rgb(238, 238, 36);
   font-weight: bold;
 }
 
@@ -298,31 +299,34 @@ ol ul {
   transition: 0.2s ease-in-out;
 }
 
+.navbar-menu-btn{
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-menu-btn:hover{
+  cursor: pointer;
+}
+
+.navbar-menu-btn .btn-nav:nth-child(1),
+.navbar-menu-btn .btn-nav:nth-child(2),
+.navbar-menu-btn .btn-nav:nth-child(3){
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.2s ease-in-out;
+}
+
 .btn-black {
   border-radius: 6px;
   background: var(--background-color-1);
-  color: red;
+  color: #e1e2e3;
   padding: 12px 20px;
   box-shadow: var(--shadow-2);
   border: none;
   font-size: 1.6rem;
   position: relative;
 }
-
-/* .btn-black span {
-  position: absolute;
-  transform: rotate(-30deg);
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-} */
-
-/* .btn-black:hover span {
-  animation: spanlinear 1s infinite linear;
-  box-shadow: var(--shadow-1);
-  
-} */
 
 @keyframes spanlinear {
   from {
@@ -371,7 +375,7 @@ ol ul {
   font-size: 60px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-lightn);
+  color: yellow;
   margin-top: 15px;
   margin-bottom: 0;
 }
@@ -469,7 +473,7 @@ ul li {
 
 .resume-nav h1 {
   font-size: 2rem;
-  color: #F9004D;
+  color: white;
 }
 
 .ant-card-body {
@@ -588,7 +592,7 @@ ul li {
 }
 
 .address:hover .svg {
-  background: #149ddd !important;
+  background: rgb(110, 110, 109) !important;
 }
 
 .contact-about-area .social-area .social-icone {
@@ -644,6 +648,7 @@ a:hover, a:focus, a:active {
 .form-group {
   margin-bottom: 20px;
 }
+
 
 .contact-form-wrapper label {
   font-size: 12px;
@@ -711,6 +716,9 @@ button.rn-btn {
   color: var(--color-primary);
 }
 
+.rn-btn span{
+  color:rgb(238, 238, 36);
+}
 
 
 
@@ -889,5 +897,11 @@ button.rn-btn {
   .navbar-left img {
     width: 60px;
     height: 60px;
+  }
+  .navbar-menu-btn .btn-nav:nth-child(1),
+  .navbar-menu-btn .btn-nav:nth-child(2),
+  .navbar-menu-btn .btn-nav:nth-child(3){
+    width: 40px;
+    height: 1.5px;
   }
 }

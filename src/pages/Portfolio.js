@@ -1,5 +1,5 @@
 import { AOS } from 'aos';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Card } from 'antd';
 import { MotionAnimate } from 'react-motion-animate';
 import PortfolioCardAll from '../components/PortfolioCardAll';
@@ -49,6 +49,10 @@ const Portfolio = () => {
     const onTab2Change = key => {
         setActiveTabKey2(key);
     };
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
 
     const lan = useSelector((state) => state.languageReducer)
     return (

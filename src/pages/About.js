@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Typewriter from 'typewriter-effect';
 import { MotionAnimate } from 'react-motion-animate';
 import {Link} from 'react-router-dom'
 import { useSelector } from 'react-redux';
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0,0)
+      }, [])
 
     const lan = useSelector((state) => state.languageReducer)
 

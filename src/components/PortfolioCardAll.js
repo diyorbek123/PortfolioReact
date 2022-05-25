@@ -2,10 +2,12 @@ import { Card } from 'antd';
 import React from 'react'
 import { FaGithubSquare, FaBootstrap, FaGithub, FaCss3Alt } from 'react-icons/fa';
 import { SiJavascript, SiNetlify, SiReact } from 'react-icons/si'
+import { Link } from 'react-router-dom';
 import { PortfolioBazaAll } from '../Baza/BazaPage';
 
 const PortfolioCardAll = () => {
     return (
+        <>
         <div className="portfolio-cards">
         {PortfolioBazaAll.map((item, index) => (
             <div key={index}>
@@ -21,8 +23,8 @@ const PortfolioCardAll = () => {
                                 <div className="pt-2"><SiJavascript size={40} /></div>
                             </div>
                             <div className=" mt-5 portfolio-span-bottom">
-                                <div className="portfolio-bottom-github colorAnimate mx-3 d-flex align-items-center"><FaGithubSquare size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Github</h4></div>
-                                <div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><SiNetlify size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Demo</h4></div>
+                                <a href={item.hrefGithub} target="_blank"><div className="portfolio-bottom-github colorAnimate mx-3 d-flex align-items-center"><FaGithubSquare size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Github</h4></div></a>
+                                <a href={item.href} target="_blank"><div className="portfolio-bottom-demo mx-3 d-flex align-items-center"><SiNetlify size={20} /><h4 className="ms-3" style={{ color: 'white', margin: '0px' }}>Demo</h4></div></a>
                             </div>
                         </div>
                     </Card>
@@ -30,6 +32,7 @@ const PortfolioCardAll = () => {
             </div>
         ))}
     </div>
+    </>
     )
 }
 

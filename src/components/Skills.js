@@ -25,7 +25,7 @@ const Skills = () => {
                                         '0%': 'blue',
                                         '100%': 'green',
                                     }}
-                                    percent={99.9} />
+                                    percent={95.9} />
                             </div>
                             <h2 className="colorwhite">Scss</h2>
                             <div>
@@ -43,7 +43,7 @@ const Skills = () => {
                                         '0%': 'red',
                                         '100%': 'green',
                                     }}
-                                    percent={95.9} />
+                                    percent={90.9} />
                             </div>
                         </div>
                         <div className="col-lg-6 col-12 media" style={{ position: 'relative' }}>
@@ -54,7 +54,7 @@ const Skills = () => {
                                         '0%': 'green',
                                         '100%': 'red',
                                     }}
-                                    percent={85.9} />
+                                    percent={90.9} />
                             </div>
                             <h2 className="colorwhite">Jquery</h2>
                             <div>
@@ -72,7 +72,7 @@ const Skills = () => {
                                         '0%': 'blue',
                                         '100%': 'green',
                                     }}
-                                    percent={95.9} />
+                                    percent={85.9} />
                             </div>
                             <h2 className="colorwhite">Redux</h2>
                             <div>
